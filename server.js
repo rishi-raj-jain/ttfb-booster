@@ -85,15 +85,19 @@ app.post('/', async (req, res) => {
             }
           } else {
             res.status(200).json({ code: 0, message: 'paths does not match the expected format.' })
+            return
           }
         } else {
           res.status(200).json({ code: 0, message: 'baseURL is required.' })
+          return
         }
       } else {
         res.status(200).json({ code: 0, message: 'SPEED_VITALS_KEY is incorrect.' })
+        return
       }
     } else {
       res.status(200).json({ code: 0, message: 'SPEED_VITALS_KEY is required.' })
+      return
     }
   } else {
     res.status(200).json({ code: 0, message: 'SPEED_VITALS_KEY, paths and baseURL is required.' })
