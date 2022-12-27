@@ -19,7 +19,7 @@
 
 ## Introduction
 
-A service that digests `paths` and hits the SpeedVitals API to visit that url around the globe. Comes in handy with deployment platform like [Edgio](https://edg.io) where edge caches allow you to speed up your site without hurting origin bandwidth.
+A service that digests `paths` and hits the SpeedVitals API to visit those around the globe. Comes in handy with deployment platform like [Edgio](https://edg.io) where edge caches allow you to speed up your site without hurting origin bandwidth.
 
 ## Tech Stack
 
